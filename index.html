@@ -4,24 +4,6 @@ title : Xiyu Liang
 navbar_title: Home
 ---
 
-<script>
-    function setStickyTop() {
-        const profileCard = document.querySelector('.profile-card-mini'); // 假设 profile_card_mini 有一个类名
-        const visitorMapCard = document.querySelector('.sticky-clustrmaps-card');
-
-        if (profileCard && visitorMapCard) {
-            const profileHeight = profileCard.offsetHeight; // 获取 profile_card_mini 的高度
-            visitorMapCard.style.top = `${profileHeight + 20}px`; // 设置 sticky-top 值
-        }
-    }
-
-    // 页面加载完成后执行
-    window.addEventListener('load', setStickyTop);
-
-    // 窗口大小变化时重新计算
-    window.addEventListener('resize', setStickyTop);
-</script>
-
 <div class="row">
     <div class="col-lg-3 col-md-4">
         {% include widgets/profile_card_mini.html %}

@@ -10,6 +10,14 @@
     border: none;     
     /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
     }
+
+    .clustrmaps-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
 </style>
 
 <!-- Adaptively calculate the top position of the visitor map card -->
@@ -33,7 +41,9 @@
         <div class="card mt-3" style="background-color: transparent;">
             <div class="card-body text-center">
                 <!-- <h5 class="card-title">Welcome!</h5> -->
-                <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=pOOUFAgbKokqcXFj2j-Zk5XQ6gDon2Q9x29MX0jVQNA"></script>
+                <div class="clustrmaps-container">
+                    <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=pOOUFAgbKokqcXFj2j-Zk5XQ6gDon2Q9x29MX0jVQNA"></script>    
+                </div>
             </div>
         </div>
     </div>
