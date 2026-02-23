@@ -1,0 +1,40 @@
+<!-- clustrmaps -->
+<style>
+    .sticky-clustrmaps-card {
+    position: sticky;
+    top: 20px;      
+    z-index: 1000;   
+    }
+
+    .card {
+    border: none;     
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    }
+</style>
+
+<!-- Adaptively calculate the top position of the visitor map card -->
+<script>
+    function setStickyTop() {
+        const profileCard = document.querySelector('.profile-card-mini');
+        const visitorMapCard = document.querySelector('.sticky-clustrmaps-card');
+
+        if (profileCard && visitorMapCard) {
+            const profileHeight = profileCard.offsetHeight; 
+            visitorMapCard.style.top = `${profileHeight + 100}px`; 
+        }
+    }
+
+    window.addEventListener('load', setStickyTop);
+    window.addEventListener('resize', setStickyTop);
+</script>
+
+<div class="row sticky-top sticky-clustrmaps-card">
+    <div class="col">
+        <div class="card mt-3" style="background-color: transparent;">
+            <div class="card-body text-center">
+                <!-- <h5 class="card-title">Welcome!</h5> -->
+                <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=pOOUFAgbKokqcXFj2j-Zk5XQ6gDon2Q9x29MX0jVQNA"></script>
+            </div>
+        </div>
+    </div>
+</div>
