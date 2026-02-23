@@ -3,11 +3,23 @@ body {
     font-family: "Lato", sans-serif;
     font-weight: 400;
     padding-top: 5.0rem;
+    background-color: #F1F8E9
 }
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
     font-weight: 700;
+}
+
+a {
+    color: #0097A7
+    /* #A1887F */
+    /* #26A69A */
+}
+
+a:hover {
+    color: #195284;
+    text-decoration: none
 }
 
 .card {
@@ -44,6 +56,7 @@ h1, h2, h3, h4, h5, h6,
 
 .navbar {
     opacity: 0.95;
+    /* background-color: antiquewhite; */
 }
 
 .inline-badge {
