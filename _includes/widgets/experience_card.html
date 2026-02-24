@@ -85,6 +85,15 @@
         font-weight: bold;
     }
 
+    .award-name {
+        color: #080909;
+        font-weight: bold;
+    }
+
+    .award-host {
+        color: #535658;
+    }
+
     .timeline {
         position: relative;
         margin: 0;
@@ -194,7 +203,7 @@
         <div class="card border-0 shadow-sm bg-white custom-radius">
             <div class="card-body p-4">
                 <div class="mx-2 my-1">
-                    <h5>Education</h5>
+                    <h5>🎓 Education</h5>
                     <ul class="list-unstyled mb-1 timeline">
                         {% for item in site.data.profile.education %}
                         <li class="media mb-2 timeline-item">
@@ -230,7 +239,7 @@
         <div class="card border-0 shadow-sm bg-white custom-radius">
             <div class="card-body p-4">
                 <div class="mx-2 my-1">
-                    <h5>Experience</h5>
+                    <h5>📍 Experience</h5>
                     <ul class="list-unstyled mb-1 timeline">
                         {% for item in site.data.profile.experience %}
                         <li class="media mb-2 timeline-item">
@@ -272,9 +281,10 @@
                         {% for item in site.data.profile.awards %}
                         <li class="mb-2">
                             <div class="d-flex">
-                                <div class="institution-name">{{ item.name }}</div>
+                                <div class="award-name">{{ item.name }}</div>
                                 <div class="ml-auto mt-auto no-break"><em>{{ item.date }}</em></div>
                             </div>
+                            <div class="award-host">{{ item.host }}</div>
                         </li>
                         {% endfor %}
                     </ul>
